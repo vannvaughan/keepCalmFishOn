@@ -22,13 +22,6 @@
     font-size: 100px;
     align-self: center;
 }
-.paragraph {
-    margin: 0 15%;
-    font-size: 20px;
-    font-family: 'Cuprum', sans-serif;
-    align-self: center;
-    column-count: 2;
-}
 
 #instaImage {
     height: 200px;
@@ -42,7 +35,6 @@
     margin: 10px 15%;
 }
 .header-container {
-    border: 1px solid black;
     width: 100%;
     text-align: center;
     margin-top: 20px;
@@ -52,16 +44,23 @@
     display: flex;
     justify-content: center;
 }
-.contact-container {
-    margin: 0 20%;
-    border: 1px solid black;
+.map-container {
+    display: flex;
+    justify-content: center;
+}
+.contact-container{
     font-family: 'Cuprum', sans-serif;
     font-size: 40px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
-.map-container {
+.logo-container {
+    width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.logo {
+    height: 300px;
 }
