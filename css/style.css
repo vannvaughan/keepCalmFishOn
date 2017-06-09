@@ -1,0 +1,67 @@
+#img-container {
+    margin: 20px 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.howToImg {
+    height: 500px;
+    width: 500px;
+}
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.header {
+    margin: 0;
+    font-family: 'Acme', sans-serif;
+    font-size: 100px;
+    align-self: center;
+}
+.paragraph {
+    margin: 0 15%;
+    font-size: 20px;
+    font-family: 'Cuprum', sans-serif;
+    align-self: center;
+    column-count: 2;
+}
+
+#instaImage {
+    height: 200px;
+    padding: 5px;
+
+}
+#img-border{
+    margin: 5px;
+}
+.form-border{
+    margin: 10px 15%;
+}
+.header-container {
+    border: 1px solid black;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+
+}
+.nav-bar {
+    display: flex;
+    justify-content: center;
+}
+.contact-container {
+    margin: 0 20%;
+    border: 1px solid black;
+    font-family: 'Cuprum', sans-serif;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.map-container {
+    display: flex;
+    justify-content: center;
+}
