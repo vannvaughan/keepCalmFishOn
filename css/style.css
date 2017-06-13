@@ -36,7 +36,18 @@ nav {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-
+}
+.social-media{
+    margin-top: 80px;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.instagram-thumb {
+    height: 60px;
+    width: 80px;
 }
 
 .howToImg {
