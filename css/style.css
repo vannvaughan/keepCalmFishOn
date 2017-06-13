@@ -1,20 +1,70 @@
+h1 {
+    font-family: 'Acme', sans-serif;
+}
+h2 {
+    font-family: 'Acme', sans-serif;
+}
+p {
+    font-family: 'Cuprum', sans-serif;
+    font-size: 25px;
+}
+nav {
+    background-color: #039be5 !important;
+}
 #img-container {
-    margin: 20px 100px;
+    margin: 20px 15% 0 15%;
+    max-height: 420px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    overflow: hidden;
+}
+#instaImage {
+    height: 200px;
+    padding: 5px;
+}
+
+.nav-bar {
+    margin-top: 20px;
+    height: 50px;
+    width: 100%;
+    font-family: 'Acme', sans-serif;
+    font-size: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
 }
 
 .howToImg {
     height: 500px;
     width: 500px;
 }
-.text-container {
+.para-container {  
+    column-count: 2;
+    column-fill: inherit;
+    width: 70%;
+    margin: 0 15%;
+    display: flex;
+    flex-direction: row;  
+}
+#howToText {
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+.text-container {
+    margin: 0 15% 20px 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .header {
     margin: 0;
@@ -23,11 +73,6 @@
     align-self: center;
 }
 
-#instaImage {
-    height: 200px;
-    padding: 5px;
-
-}
 #img-border{
     margin: 5px;
 }
@@ -35,18 +80,17 @@
     margin: 10px 15%;
 }
 .header-container {
-    width: 100%;
+    margin: 0 15%;
+    width: 70%;
     text-align: center;
     margin-top: 20px;
 
 }
-.nav-bar {
-    display: flex;
-    justify-content: center;
-}
 .map-container {
+    margin: 0 0 100px 0;
     display: flex;
     justify-content: center;
+
 }
 .contact-container{
     font-family: 'Cuprum', sans-serif;
@@ -64,3 +108,109 @@
 .logo {
     height: 300px;
 }
+.sub-btn {
+    background-color: #039be5 !important;
+}
+
+/* CSS for hamburger nav bar*/
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 6% !important;
+  height: 80px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  left: 20px;
+  top: 20px;
+  margin: auto;
+  cursor: pointer;
+}
+
+.stick {
+  width: 80px;
+  height: 8px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  background-color:  #039be5;
+  display: inline-block;
+}
+
+.stick:last-child {
+  margin-bottom: 0px;
+}
+
+.stick-1.open {
+  animation: stick-1-open .6s ease-out forwards;
+}
+
+.stick-2.open {
+  animation: stick-2-open .6s linear forwards;
+}
+
+.stick-3.open {
+  animation: stick-3-open .6s linear forwards;
+}
+
+@keyframes stick-1-open {
+  0%   {width: 80px;}
+  40%  {background-color: #d50000; width: 8px; transform: translate(40px, 0px);}
+  75%, 80%  {width: 8px; transform: translate(40px, -50px); animation-timing-function: cubic-bezier(0,1,1,1);}
+  100% {background-color: #d50000; width: 8px; transform: translate(35px, 46px);}
+}
+
+@keyframes stick-2-open {
+  80%  {background-color: #039be5; transform: translate(0px, 0px) rotate(0deg);}
+  100% {background-color: #d50000; transform: translate(8px, 0px) rotate(40deg);}
+}
+
+@keyframes stick-3-open {
+  80%  {background-color: #039be5; transform: translate(0px, 0px) rotate(0deg);}
+  100% {background-color: #d50000; transform: translate(8px, -23px) rotate(-40deg);}
+}
+
+.stick-1.close {
+  width: 8px; 
+  transform: translate(27px, 26px);
+  animation: stick-1-close .6s ease-out forwards;
+}
+
+.stick-2.close {
+  transform: translate(0px, 0px) rotate(40deg);
+  animation: stick-2-close .6s ease-out forwards;
+}
+
+.stick-3.close {
+  transform: translate(0px, -23px) rotate(-40deg);
+  animation: stick-3-close .6s ease-out forwards;
+}
+
+@keyframes stick-1-close {
+  0%, 70% {width: 0px;}
+  100%    {width: 80px; transform: translate(0, 0);}
+}
+
+@keyframes stick-2-close {
+  0%   {background-color: #d50000; width: 80px;}
+  20%  {background-color: #d50000; width: 8px; transform: translate(0, 0px) rotate(40deg);}
+  40%  {background-color: #039be5; width: 0px;}
+  65%  {transform: translate(0, -70px); animation-timing-function: cubic-bezier(0,1,1,1);}
+  80%  {width: 0px;}
+  100% {width: 80px; transform: translate(0, 0px);}
+}
+
+@keyframes stick-3-close {
+  0%   {background-color: #d50000; width: 80px;}
+  20%  {background-color: #d50000; width: 8px; transform: translate(0, -23px) rotate(-40deg);}
+  40%  {background-color: #039be5;}
+  65%  {transform: translate(0, -93px); animation-timing-function: cubic-bezier(0,1,1,1);}
+  90%  {width: 8px;}
+  100% {width: 80px; transform: translate(0, 0px);}
+}
+
