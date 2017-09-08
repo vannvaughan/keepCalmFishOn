@@ -26,6 +26,10 @@ nav {
     padding: 5px;
 }
 
+#img-border{
+    margin: 5px;
+}
+
 .nav-bar {
     margin-top: 20px;
     height: 50px;
@@ -84,9 +88,6 @@ nav {
     align-self: center;
 }
 
-#img-border{
-    margin: 5px;
-}
 .form-border{
     margin: 10px 15%;
 }
