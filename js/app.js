@@ -31,7 +31,7 @@ $stateProvider
 
 .directive('instagramIcon', function(){
     return{
-        template: "<a href='http://www.instagram.com/thereelkcfo'><img class='instagram-thumb' src='/img/instagram-thumb.jpg'></a>"
+        template: "<a href='http://www.instagram.com/thereelkcfo'><img class='instagram-thumb' src='./images/instagram-thumb.jpg'></a>"
 
     }
 })
